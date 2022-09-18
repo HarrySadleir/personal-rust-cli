@@ -1,1 +1,0 @@
-This project is built from following along the Youtube channel "Let's Get Rusty", and their series on [building a rust CLI.](https://www.youtube.com/watch?v=XYkiwsplDTg)
