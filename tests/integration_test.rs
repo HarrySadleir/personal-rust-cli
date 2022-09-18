@@ -1,4 +1,4 @@
-use assert_cmd::prelude::*; 
+use assert_cmd::prelude::*;
 use predicates::prelude::*; 
 use std::process::Command;
 
@@ -12,5 +12,5 @@ fn minigrep_end_to_end() -> Result<(), Box<dyn std::error::Error>> {
         .stdout(
             predicate::str::contains("Are you nobody, too?\nHow dreary to be somebody!")
         );
-    return Ok(());
+    Ok(())
 }

@@ -10,7 +10,7 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
         println!("{}", line);
     }
 
-    return Ok(());
+    Ok(())
 }
 
 pub struct Config {
@@ -26,7 +26,7 @@ impl Config {
 
         let query = args[0].clone();
         let filename = args[1].clone();
-        return Ok(Config { query, filename })
+        Ok(Config { query, filename })
     }
 }
 
@@ -39,7 +39,7 @@ pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
         }
     }
 
-    return results;
+    results
 }
 
 #[cfg(test)]
